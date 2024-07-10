@@ -1,0 +1,54 @@
+.event-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: calc(50% - 32px); /* Adjust width to fit two cards per row */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  background-color: #f0f8ff;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.event-symbol {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.event-symbol .separator {
+  height: 40px;
+  width: 2px;
+  background-color: #000;
+  margin-left: 10px;
+}
+
+.event-details {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.event-details h3 {
+  margin: 0 0 5px;
+}
+
+.event-details p {
+  margin: 5px 0;
+}
+
+.event-card button {
+  padding: 8px 16px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.event-card button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
